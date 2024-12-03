@@ -59,4 +59,3 @@ for report in reports:
         is_unsafe_dampened += 1
 
 print(f"Safe reports (dampened): {len(reports) - is_unsafe_dampened}")
-
