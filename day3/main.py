@@ -27,8 +27,8 @@ with open("input.txt", "r") as file:
     for instruction in instructions:
         if instruction == "don't()":
             instruction = "dont()"
-        eval(instruction)
+        result = eval(instruction)
         if mul_values and "mul" in instruction:
-            sum_pt_2 += eval(instruction)
+            sum_pt_2 += result
 
 print(f"Sum: {sum_pt_2}")
